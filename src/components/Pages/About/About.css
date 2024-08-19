@@ -1,0 +1,147 @@
+/* General Styles */
+.img {
+    background-image: url(./../../../../public/img/slider-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+}
+
+.text-about {
+    color: white;
+    border-radius: 8px; 
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin-top: 0.9cm;
+}
+
+.About-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #fff;
+}
+
+.service-card {
+    background-color: green;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s; 
+}
+
+.service-card:hover {
+    transform: scale(1.05); 
+    border: 2px solid greenyellow; /* Change border color */
+    background-color: black;
+}
+
+.service-card h5 {
+    margin-top: 15px;
+    color: white;
+}
+
+.features {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+}
+
+.feature-list li::before {
+    content: "✔";
+    color: #ffc107;
+    margin-right: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .img {
+        height: 250px; /* Adjust height for large tablets and small desktops */
+    }
+
+    .text-about {
+        font-size: 1.4rem; /* Slightly smaller font size for large tablets and small desktops */
+    }
+}
+
+@media (max-width: 992px) {
+    .img {
+        height: 200px; /* Adjust height for medium screens */
+    }
+
+    .text-about {
+        font-size: 1.2rem; /* Adjust font size for medium screens */
+        padding: 15px; /* Adjust padding for medium screens */
+    }
+
+    .About-us {
+        font-size: 18px; /* Adjust font size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .img {
+        height: 150px; /* Adjust height for tablets and smaller screens */
+    }
+
+    .text-about {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .About-us {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .service-card {
+        margin-bottom: 20px; /* Add margin for spacing between cards */
+    }
+
+    .features {
+        padding: 15px; /* Adjust padding for features section */
+    }
+}
+
+@media (max-width: 576px) {
+    .text-about {
+        font-size: 0.875rem; /* Adjust font size for very small screens */
+        padding: 8px; /* Adjust padding for very small screens */
+    }
+
+    .service-card,
+    .features {
+        font-size: 14px; /* Adjust font size for very small screens */
+    }
+
+    .service-icon {
+        font-size: 30px; /* Reduce icon size for small screens */
+    }
+
+    .About-us {
+        padding: 10px; /* Adjust padding for very small screens */
+        font-size: 14px; /* Adjust font size for very small screens */
+    }
+}

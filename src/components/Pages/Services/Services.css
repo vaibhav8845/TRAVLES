@@ -1,0 +1,137 @@
+/* General Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive .img1 Section */
+.img1 {
+    background-image: url('./../../../../public/img/car-service.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20vh 0;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+    margin-top: 1cm;
+}
+
+@media (max-width: 1200px) {
+    .img1 {
+        padding: 15vh 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .img1 {
+        padding: 10vh 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .img1 {
+        padding: 8vh 0;
+        min-height: 40vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .img1 {
+        padding: 6vh 0;
+        min-height: 30vh;
+    }
+}
+
+/* Responsive .Discount Section */
+.Discount {
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: green;
+    font-size: 1cm;
+    text-align: center;
+    margin: 20px 0;
+}
+
+@media (max-width: 1200px) {
+    .Discount {
+        font-size: 0.8cm;
+    }
+}
+
+@media (max-width: 768px) {
+    .Discount {
+        font-size: 0.6cm;
+    }
+}
+
+@media (max-width: 480px) {
+    .Discount {
+        font-size: 0.4cm;
+    }
+}
+
+/* Responsive Table Section */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Allows horizontal scrolling on smaller screens */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    padding: 0 15px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody tr {
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .table {
+        font-size: 0.8rem; /* Reduce font size for readability on small screens */
+    }
+}
+
+/* Responsive Margins and Padding */
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 8px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 5px;
+    }
+}

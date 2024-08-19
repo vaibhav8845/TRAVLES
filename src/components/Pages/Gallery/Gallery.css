@@ -1,0 +1,65 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive .img1 Section */
+.img-gallery {
+    background-image: url('https://cdn.motor1.com/images/mgl/Kb1QEA/s3/2023-bentley-batur-first-drive-review.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20vh 0;
+    position: relative;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+    margin-top: -0.6cm;
+}
+
+@media (max-width: 1200px) {
+    .img1 {
+        padding: 15vh 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .img1 {
+        padding: 10vh 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .img1 {
+        padding: 8vh 0;
+        min-height: 40vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .img1 {
+        padding: 6vh 0;
+        min-height: 30vh;
+    }
+}
+
+
+
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .main-gallery{
+    margin-top: 2cm;
+  }
